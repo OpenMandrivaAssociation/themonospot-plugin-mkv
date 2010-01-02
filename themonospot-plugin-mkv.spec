@@ -1,6 +1,6 @@
 Summary   : Matroska plugin for themonospot system
 Name      : themonospot-plugin-mkv
-Version   : 0.1.0
+Version   : 0.1.1
 Release   : %mkrel 1
 License   : GPLv2
 Group     : Video
@@ -10,12 +10,8 @@ URL       : http://www.integrazioneweb.com/themonospot
 
 #BuildArch : noarch
 
-BuildRequires: mono >= 1.2.3
-BuildRequires: pkgconfig
-BuildRequires: themonospot-base >= 0.8.1
-
-Requires: mono >= 1.2.3
-Requires: themonospot-base >= 0.8.1
+BuildRequires: mono-devel
+BuildRequires: themonospot-base-devel
 
 %description
 themonospot-plugin-mkv is a matroska plugin package for themonospot system. 
@@ -41,8 +37,13 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{_datadir}/themonospot/plugins/%{name}/
+%doc copying.gpl
+%{_libdir}/themonospot/plugins/%{name}/
+
 
 %changelog
+* Wed Dec 30 2009 Armando Basile <hmandevteam@gmail.com> 0.1.1-1mdv2010.1
+- removed GAC use
+
 * Mon Dec 14 2009 Armando Basile <hmandevteam@gmail.com> 0.1.0-1mdv2010.1
 - first release of new matroska plugin component
