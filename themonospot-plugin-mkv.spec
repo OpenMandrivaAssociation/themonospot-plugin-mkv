@@ -41,9 +41,15 @@ rm -rf %{buildroot}
 %{_libdir}/themonospot/plugins/%{name}/
 
 
+
+
 %changelog
-* Wed Dec 30 2009 Armando Basile <hmandevteam@gmail.com> 0.1.1-1mdv2010.1
+* Sat Jan 02 2010 Armando Basile <hman@mandriva.org> 0.1.1-1mdv2010.1
++ Revision: 485127
 - removed GAC use
 
-* Mon Dec 14 2009 Armando Basile <hmandevteam@gmail.com> 0.1.0-1mdv2010.1
-- first release of new matroska plugin component
+* Thu Dec 24 2009 Armando Basile <hman@mandriva.org> 0.1.0-1mdv2010.1
++ Revision: 482032
+- added sources and spec file
+- create themonospot-plugin-mkv
+
