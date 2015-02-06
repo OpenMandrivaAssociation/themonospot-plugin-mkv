@@ -1,7 +1,7 @@
 Summary: Matroska plugin for themonospot system
 Name:    themonospot-plugin-mkv
 Version: 0.1.1
-Release: 2
+Release: 3
 License: GPLv2
 Group:   Video
 Source:  http://www.integrazioneweb.com/repository/SOURCES/themonospot-plugin-mkv-%{version}.tar.gz
